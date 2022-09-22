@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>ADMS Demo</title>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header>
+        <nav class="navbarContainer">
+            <h2 class="selectedText">CALCULATOR</h2>
+            <label class="switch">
+                <input type="checkbox" onclick="switchChange()">
+                <span class="slider round"></span>
+            </label>
+            <h2 class="unselectedText">FIZZ BUZZ</h2>
+        </nav>
+    </header>
+
+    <section class="main">
+      <section class="container">
+        <section class="calculatorContainer">
+            <h1 class='text'>The Calculator</h1>
+            <div class="calInputDiv">
+                <!-- <img
+                src="https://c.tenor.com/G0gv_x33k40AAAAC/math-thinking.gif"
+                alt=""
+                /> -->
+            <input
+                class="calcInput"
+                type="text"
+                name="calculator"
+                placeholder="Enter a number"
+                autocomplete="off"
+            />
+            <button onclick="calculator()" class="">Send</button>
+            <div class="calcResult"></div>
+            </div>
+        </section>
+
+        <section class="fizzyBuzzyContainer">
+            <h1 class='text'>Fizzy buzzy</h1>
+            <div class="FizzBuzz">
+            <input class="from" type="number" />
+            <input class="to" type="number" />
+            <button onclick="fizzBuzz()">FizzBuzz</button>
+            </div>
+        </section>
+    </section> 
+        <ul class="fizzbuzzlist"></ul>
+  </body>
+</html>

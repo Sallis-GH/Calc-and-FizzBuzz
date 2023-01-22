@@ -1,9 +1,6 @@
 let isCalculator = true
 const calculator = () => {
     data = document.querySelector('.calcInput').value;
-    // if (data === 'vicon.ico') {
-    //   return;
-    // }
     const newData = data.trim();
     const isValidExp = /^\d+\s?[\+\-\*\/]\s?\d+$/;
     if (!isValidExp.test(newData)) {
@@ -64,10 +61,10 @@ const calculator = () => {
     unselected.classList.replace('unselectedText','selectedText');
     if (isCalculator){
         calculatorContainer.style.display = 'none';
-        fizzyBuzzyContainer.style.display = 'block';
+        fizzyBuzzyContainer.style.display = 'flex';
         isCalculator = false;
     } else {
-        calculatorContainer.style.display = 'block';
+        calculatorContainer.style.display = 'flex';
         fizzyBuzzyContainer.style.display = 'none';
         isCalculator = true;
     }

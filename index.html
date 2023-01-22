@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>ADMS Demo</title>
     <script src="./index.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
         <nav class="navbarContainer">
             <h2 class="selectedText">CALCULATOR</h2>
@@ -24,35 +26,33 @@
     </header>
 
     <section class="main">
-      <section class="container">
-        <section class="calculatorContainer">
-            <h1 class='text'>The Calculator</h1>
-            <div class="calInputDiv">
-                <!-- <img
+        <section class="container">
+            <section class="calculatorContainer">
+                <h1 class='text'>The Calculator</h1>
+                <div class="calInputDiv">
+                    <!-- <img
                 src="https://c.tenor.com/G0gv_x33k40AAAAC/math-thinking.gif"
                 alt=""
                 /> -->
-            <input
-                class="calcInput"
-                type="text"
-                name="calculator"
-                placeholder="Enter a number"
-                autocomplete="off"
-            />
-            <button onclick="calculator()" class="">Send</button>
-            <div class="calcResult"></div>
-            </div>
-        </section>
+                    <input class="calcInput" type="text" name="calculator" placeholder="Enter a number"
+                        autocomplete="off" />
+                    <button onclick="calculator()" class="">Send</button>
+                    <div class="calcResult"></div>
+                </div>
+            </section>
 
-        <section class="fizzyBuzzyContainer">
-            <h1 class='text'>Fizzy buzzy</h1>
-            <div class="FizzBuzz">
-            <input class="from" type="number" />
-            <input class="to" type="number" />
-            <button onclick="fizzBuzz()">FizzBuzz</button>
-            </div>
+            <section class="fizzyBuzzyContainer">
+                <div class="FizzBuzz">
+                    <div class="fizzbuzzinputs">
+                        <h1 class='text'>Fizzy buzzy</h1>
+                        <input class="from" type="number" placeholder="from" />
+                        <input class="to" type="number" placeholder="to" />
+                        <button class="fizzbuzz--btn" onclick="fizzBuzz()">FizzBuzz</button>
+                    </div>
+                </div>
+                <ul class="fizzbuzzlist"></ul>
+            </section>
         </section>
-    </section> 
-        <ul class="fizzbuzzlist"></ul>
-  </body>
+</body>
+
 </html>
